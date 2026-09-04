@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-container">
+        <div class="logo">DevPortfolio</div>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="gallery.html">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-content">
+          <h1 id="hero-title">Hello, I'm a Web Developer</h1>
+          <p>Building accessible, responsive, and dynamic web experiences.</p>
+          <a href="gallery.html" class="btn">View My Work</a>
+        </div>
+      </section>
+
+      <!-- New: Tech Stack Section -->
+      <section class="container" aria-labelledby="skills-title">
+        <h2 id="skills-title" class="section-title">My Tech Stack</h2>
+        <div class="skills-list">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3 (Grid/Flexbox)</span>
+          <span class="skill-tag">JavaScript (ES6+)</span>
+          <span class="skill-tag">RESTful APIs</span>
+          <span class="skill-tag">Git & GitHub</span>
+          <span class="skill-tag">Responsive Design</span>
+        </div>
+      </section>
+
+      <!-- New: What I Do Section -->
+      <section class="container bg-light-alt" aria-labelledby="services-title">
+        <h2 id="services-title" class="section-title">What I Do</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>Responsive Layouts</h3>
+            <p>
+              I build mobile-first interfaces that look great on any device,
+              ensuring a seamless user experience from smartphones to large
+              desktop monitors.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3>Dynamic Front-Ends</h3>
+            <p>
+              Using vanilla JavaScript, I create interactive single-page
+              applications and connect them to external APIs to fetch and
+              display real-time data.
+            </p>
+          </div>
+          <div class="feature-card">
+            <h3>Accessible Web Design</h3>
+            <p>
+              I write semantic HTML and implement ARIA landmarks to ensure the
+              web is usable for everyone, including those relying on screen
+              readers.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p>&copy; 2026 DevPortfolio. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

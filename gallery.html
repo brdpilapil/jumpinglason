@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery - My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-container">
+        <div class="logo">DevPortfolio</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="gallery.html" class="active">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="projects-title">
+        <div class="container">
+          <h2 id="projects-title">My Projects</h2>
+
+          <div class="search-controls">
+            <!-- GitHub Username Fetch Form -->
+            <form id="user-search-form" class="user-search-form">
+              <label for="username-input" class="sr-only"
+                >GitHub Username</label
+              >
+              <input
+                type="text"
+                id="username-input"
+                placeholder="Enter GitHub username (e.g. torvalds)"
+                required
+              />
+              <button type="submit" class="btn">Search User</button>
+            </form>
+
+            <!-- Local Repository Filter Input -->
+            <div class="search-container">
+              <label for="search-input" class="sr-only"
+                >Filter projects by name</label
+              >
+              <input
+                type="search"
+                id="search-input"
+                placeholder="Filter displayed repos by name..."
+                disabled
+              />
+            </div>
+          </div>
+
+          <div
+            id="spinner"
+            class="spinner"
+            aria-hidden="true"
+            style="display: none"
+          ></div>
+          <div
+            id="error-container"
+            class="error-msg"
+            aria-live="assertive"
+          ></div>
+
+          <div id="gallery" class="gallery">
+            <!-- Project cards dynamically injected here -->
+          </div>
+
+          <div id="pagination" class="pagination">
+            <button id="prev-btn" class="btn" disabled>Previous</button>
+            <span id="page-info">Page 1</span>
+            <button id="next-btn" class="btn" disabled>Next</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <p>&copy; 2026 DevPortfolio. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
